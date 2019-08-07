@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+
+  <section class="todoapp">
+    <!-- 头部 -->
+    <tododHead></tododHead>
+
+    <!-- 列表部分 -->
+    <todoList></todoList>
+
+    <!-- 底部 -->
+    <todoFooter></todoFooter>
+
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import tododHead from './components/tododHead.vue'
+import todoList from './components/todoList.vue'
+import todoFooter from './components/todoFooter.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    tododHead, todoList, todoFooter
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
