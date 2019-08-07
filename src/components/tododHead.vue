@@ -15,7 +15,7 @@
 export default {
   data () {
     return {
-      todoName: ''
+      todoName: '默认的'
     }
   },
   methods: {
